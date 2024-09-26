@@ -22,7 +22,7 @@ setup(
         (os.path.join('share', package_name, 'models'),
          glob('models/*.config')),
     ],
-    install_requires=['setuptools', 'owl_description'],
+    install_requires=['setuptools', 'owl_description', 'owl_moveit_config'],
     zip_safe=True,
     maintainer='vardan',
     maintainer_email='vardanmittal000@gmail.com',

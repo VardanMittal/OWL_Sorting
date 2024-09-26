@@ -1,2 +1,3 @@
 owl_description
+owl_moveit_config
 setuptools

@@ -1,0 +1,14 @@
+running develop
+running egg_info
+writing owl_gazebo.egg-info/PKG-INFO
+writing dependency_links to owl_gazebo.egg-info/dependency_links.txt
+writing entry points to owl_gazebo.egg-info/entry_points.txt
+writing requirements to owl_gazebo.egg-info/requires.txt
+writing top-level names to owl_gazebo.egg-info/top_level.txt
+reading manifest file 'owl_gazebo.egg-info/SOURCES.txt'
+writing manifest file 'owl_gazebo.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/aaditya/OWL_Sorting/ros2_ws/install/owl_gazebo/lib/python3.10/site-packages/owl-gazebo.egg-link (link to .)
+
+Installed /home/aaditya/OWL_Sorting/ros2_ws/build/owl_gazebo
+running symlink_data
