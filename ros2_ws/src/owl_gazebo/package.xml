@@ -6,7 +6,6 @@
   <description>TODO: Package description</description>
   <maintainer email="vardanmittal000@gmail.com">vardan</maintainer>
   <license>TODO: License declaration</license>
-<buildtool_depend>ament_cmake</buildtool_depend> 
 
   <depend>owl_description</depend>
   <depend>owl_moveit_config</depend>

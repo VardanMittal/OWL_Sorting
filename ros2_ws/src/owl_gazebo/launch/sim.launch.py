@@ -20,7 +20,8 @@ def generate_launch_description():
     # Get directories
     pkg_gazebo = get_package_share_directory('owl_gazebo')
     pkg_moveit_config = get_package_share_directory('owl_moveit_config')
-    print(pkg_moveit_config)
+    print(f"MoveIt config package directory: {pkg_moveit_config}")
+    
     # Process URDF file
     xacro_file = os.path.join(pkg_gazebo, 'urdf', 'sim_gazebo.xacro')
     if not os.path.exists(xacro_file):
@@ -38,9 +39,10 @@ def generate_launch_description():
     )
 
     # Gazebo launch
+    gazebo_launch_file = os.path.join(get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')
+    print(f"Gazebo launch file: {gazebo_launch_file}")
     gazebo = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([os.path.join(
-            get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')]),
+        PythonLaunchDescriptionSource(gazebo_launch_file),
         launch_arguments={'world': os.path.join(pkg_gazebo, 'world', 'table.world')}.items()
     )
 
@@ -71,6 +73,9 @@ def generate_launch_description():
 
     # MoveIt 2 launch
     moveit_config = os.path.join(pkg_moveit_config, 'launch', 'move_group.launch.py')
+    if not os.path.exists(moveit_config):
+        raise FileNotFoundError(f"MoveIt launch file not found: {moveit_config}")
+    print(f"MoveIt launch file: {moveit_config}")
     moveit = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(moveit_config),
         launch_arguments={'use_sim_time': use_sim_time}.items()
