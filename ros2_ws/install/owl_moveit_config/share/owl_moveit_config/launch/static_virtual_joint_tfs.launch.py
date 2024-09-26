@@ -1,1 +1,0 @@
-/home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config/launch/static_virtual_joint_tfs.launch.py

@@ -1,1 +1,0 @@
-/home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config/launch/moveit_rviz.launch.py
