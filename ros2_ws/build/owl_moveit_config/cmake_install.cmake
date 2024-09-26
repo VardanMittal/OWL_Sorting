@@ -1,8 +1,8 @@
-# Install script for directory: /home/vardan/OWL_Sorting/ros2_ws/src/owl_moveit_config
+# Install script for directory: /home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/vardan/OWL_Sorting/ros2_ws/install/owl_moveit_config")
+  set(CMAKE_INSTALL_PREFIX "/home/aaditya/OWL_Sorting/ros2_ws/install/owl_moveit_config")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

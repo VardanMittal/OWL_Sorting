@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/vardan/OWL_Sorting/ros2_ws/install/owl_moveit_config/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/aaditya/OWL_Sorting/ros2_ws/install/owl_moveit_config/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/vardan/OWL_Sorting/ros2_ws/install/owl_moveit_config/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/aaditya/OWL_Sorting/ros2_ws/install/owl_moveit_config/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/vardan/OWL_Sorting/ros2_ws/install/owl_moveit_config/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/aaditya/OWL_Sorting/ros2_ws/install/owl_moveit_config/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/vardan/OWL_Sorting/ros2_ws/install/owl_moveit_config/${destination}")
+      set(destination "/home/aaditya/OWL_Sorting/ros2_ws/install/owl_moveit_config/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -310,53 +310,53 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(FILES "/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/owl_moveit_config" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/vardan/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/owl_moveit_config" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/owl_moveit_config" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/owl_moveit_config" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/owl_moveit_config" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/vardan/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/owl_moveit_config" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/owl_moveit_config" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/owl_moveit_config" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/owl_moveit_config/environment")
-ament_cmake_symlink_install_files("/home/vardan/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/owl_moveit_config/environment")
+ament_cmake_symlink_install_files("/home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/owl_moveit_config/environment")
 
-# install(FILES "/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/owl_moveit_config/environment")
-ament_cmake_symlink_install_files("/home/vardan/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/owl_moveit_config/environment")
+# install(FILES "/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/owl_moveit_config/environment")
+ament_cmake_symlink_install_files("/home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/owl_moveit_config/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/owl_moveit_config/environment")
-ament_cmake_symlink_install_files("/home/vardan/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/owl_moveit_config/environment")
+ament_cmake_symlink_install_files("/home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/owl_moveit_config/environment")
 
-# install(FILES "/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/owl_moveit_config/environment")
-ament_cmake_symlink_install_files("/home/vardan/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/owl_moveit_config/environment")
+# install(FILES "/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/owl_moveit_config/environment")
+ament_cmake_symlink_install_files("/home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/owl_moveit_config/environment")
 
-# install(FILES "/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/owl_moveit_config")
-ament_cmake_symlink_install_files("/home/vardan/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/owl_moveit_config")
+# install(FILES "/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/owl_moveit_config")
+ament_cmake_symlink_install_files("/home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/owl_moveit_config")
 
-# install(FILES "/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/owl_moveit_config")
-ament_cmake_symlink_install_files("/home/vardan/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/owl_moveit_config")
+# install(FILES "/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/owl_moveit_config")
+ament_cmake_symlink_install_files("/home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/owl_moveit_config")
 
-# install(FILES "/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/owl_moveit_config")
-ament_cmake_symlink_install_files("/home/vardan/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/owl_moveit_config")
+# install(FILES "/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/owl_moveit_config")
+ament_cmake_symlink_install_files("/home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/owl_moveit_config")
 
-# install(FILES "/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/owl_moveit_config")
-ament_cmake_symlink_install_files("/home/vardan/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/owl_moveit_config")
+# install(FILES "/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/owl_moveit_config")
+ament_cmake_symlink_install_files("/home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/owl_moveit_config")
 
-# install(FILES "/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/owl_moveit_config")
-ament_cmake_symlink_install_files("/home/vardan/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/owl_moveit_config")
+# install(FILES "/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/owl_moveit_config")
+ament_cmake_symlink_install_files("/home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/owl_moveit_config")
 
-# install(FILES "/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_index/share/ament_index/resource_index/packages/owl_moveit_config" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/vardan/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_index/share/ament_index/resource_index/packages/owl_moveit_config" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_index/share/ament_index/resource_index/packages/owl_moveit_config" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_index/share/ament_index/resource_index/packages/owl_moveit_config" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_core/owl_moveit_configConfig.cmake" "/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_core/owl_moveit_configConfig-version.cmake" "DESTINATION" "share/owl_moveit_config/cmake")
-ament_cmake_symlink_install_files("/home/vardan/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_core/owl_moveit_configConfig.cmake" "/home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_core/owl_moveit_configConfig-version.cmake" "DESTINATION" "share/owl_moveit_config/cmake")
+# install(FILES "/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_core/owl_moveit_configConfig.cmake" "/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_core/owl_moveit_configConfig-version.cmake" "DESTINATION" "share/owl_moveit_config/cmake")
+ament_cmake_symlink_install_files("/home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_core/owl_moveit_configConfig.cmake" "/home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/ament_cmake_core/owl_moveit_configConfig-version.cmake" "DESTINATION" "share/owl_moveit_config/cmake")
 
-# install(FILES "/home/vardan/OWL_Sorting/ros2_ws/src/owl_moveit_config/package.xml" "DESTINATION" "share/owl_moveit_config")
-ament_cmake_symlink_install_files("/home/vardan/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/home/vardan/OWL_Sorting/ros2_ws/src/owl_moveit_config/package.xml" "DESTINATION" "share/owl_moveit_config")
+# install(FILES "/home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config/package.xml" "DESTINATION" "share/owl_moveit_config")
+ament_cmake_symlink_install_files("/home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES "/home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config/package.xml" "DESTINATION" "share/owl_moveit_config")
 
 # install(DIRECTORY "launch" "DESTINATION" "share/owl_moveit_config" "PATTERN_EXCLUDE" "setup_assistant.launch")
-ament_cmake_symlink_install_directory("/home/vardan/OWL_Sorting/ros2_ws/src/owl_moveit_config" DIRECTORY "launch" "DESTINATION" "share/owl_moveit_config" "PATTERN_EXCLUDE" "setup_assistant.launch")
+ament_cmake_symlink_install_directory("/home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config" DIRECTORY "launch" "DESTINATION" "share/owl_moveit_config" "PATTERN_EXCLUDE" "setup_assistant.launch")
 
 # install(DIRECTORY "config" "DESTINATION" "share/owl_moveit_config")
-ament_cmake_symlink_install_directory("/home/vardan/OWL_Sorting/ros2_ws/src/owl_moveit_config" DIRECTORY "config" "DESTINATION" "share/owl_moveit_config")
+ament_cmake_symlink_install_directory("/home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config" DIRECTORY "config" "DESTINATION" "share/owl_moveit_config")
 
 # install(FILES ".setup_assistant" "DESTINATION" "share/owl_moveit_config")
-ament_cmake_symlink_install_files("/home/vardan/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES ".setup_assistant" "DESTINATION" "share/owl_moveit_config")
+ament_cmake_symlink_install_files("/home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config" FILES ".setup_assistant" "DESTINATION" "share/owl_moveit_config")

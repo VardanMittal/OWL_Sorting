@@ -1,3 +1,3 @@
 # generated from colcon_powershell/shell/template/hook_prepend_value.ps1.em
 
-colcon_prepend_unique_value PYTHONPATH "$env:COLCON_CURRENT_PREFIX\/home/vardan/OWL_Sorting/ros2_ws/build/owl_description"
+colcon_prepend_unique_value PYTHONPATH "$env:COLCON_CURRENT_PREFIX\/home/aaditya/OWL_Sorting/ros2_ws/build/owl_description"

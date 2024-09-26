@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vardan/OWL_Sorting/ros2_ws/src/owl_moveit_config
+CMAKE_SOURCE_DIR = /home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config
+CMAKE_BINARY_DIR = /home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vardan/OWL_Sorting/ros2_ws/src/owl_moveit_config /home/vardan/OWL_Sorting/ros2_ws/src/owl_moveit_config /home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config /home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config /home/vardan/OWL_Sorting/ros2_ws/build/owl_moveit_config/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config /home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config /home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config /home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config /home/aaditya/OWL_Sorting/ros2_ws/build/owl_moveit_config/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

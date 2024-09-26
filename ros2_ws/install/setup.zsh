@@ -22,13 +22,13 @@ _colcon_prefix_chain_zsh_source_script() {
 COLCON_CURRENT_PREFIX="/opt/ros/humble"
 _colcon_prefix_chain_zsh_source_script "$COLCON_CURRENT_PREFIX/local_setup.zsh"
 # setting COLCON_CURRENT_PREFIX avoids determining the prefix in the sourced script
-COLCON_CURRENT_PREFIX="/home/vardan/Introduction-to-Robotics/Module2/ros2_ws/install"
+COLCON_CURRENT_PREFIX="/home/aaditya/ros2_ws/install"
 _colcon_prefix_chain_zsh_source_script "$COLCON_CURRENT_PREFIX/local_setup.zsh"
 # setting COLCON_CURRENT_PREFIX avoids determining the prefix in the sourced script
-COLCON_CURRENT_PREFIX="/home/vardan/Introduction-to-Robotics/Module1/ros2_wk/install"
+COLCON_CURRENT_PREFIX="/home/aaditya/Intro-to-robotics/ass1/ros2_ws/install"
 _colcon_prefix_chain_zsh_source_script "$COLCON_CURRENT_PREFIX/local_setup.zsh"
 # setting COLCON_CURRENT_PREFIX avoids determining the prefix in the sourced script
-COLCON_CURRENT_PREFIX="/home/vardan/RAKSH-Autonomous-Pesticide-Spraying-Robot/ros2_ws/install"
+COLCON_CURRENT_PREFIX="/home/aaditya/Intro-to-robotics/ass3/ros2_ws_2/install"
 _colcon_prefix_chain_zsh_source_script "$COLCON_CURRENT_PREFIX/local_setup.zsh"
 
 # source this prefix
