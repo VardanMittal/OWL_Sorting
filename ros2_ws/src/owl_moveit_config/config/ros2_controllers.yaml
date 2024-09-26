@@ -24,3 +24,15 @@ owl_arm_controller:
     state_interfaces:
       - position
       - velocity
+    state_publish_rate: 50.0
+    action_monitor_rate: 20.0
+    allow_partial_joints_goal: false
+    constraints:
+      stopped_velocity_tolerance: 0.01
+      goal_time: 0.0
+      BJ: {trajectory: 0.1, goal: 0.1}
+      SJ: {trajectory: 0.1, goal: 0.1}
+      EJ: {trajectory: 0.1, goal: 0.1}
+      W1J: {trajectory: 0.1, goal: 0.1}
+      W2J: {trajectory: 0.1, goal: 0.1}
+      W3J: {trajectory: 0.1, goal: 0.1}

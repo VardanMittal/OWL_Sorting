@@ -15,6 +15,8 @@ def generate_launch_description():
     )
 
     use_sim_time = LaunchConfiguration('use_sim_time')
+    
+    pkg_moveit_config = get_package_share_directory('owl_moveit_config')
 
     pkg_path = get_package_share_directory('owl_gazebo')
     xacro_file = os.path.join(pkg_path, 'urdf', 'sim_gazebo.xacro')
@@ -45,14 +47,37 @@ def generate_launch_description():
     spawn_entity = Node(
         package='gazebo_ros',
         executable='spawn_entity.py',
-        name='gripper',
-        output='screen',
+        name='owl',
         arguments=['-topic', '/robot_description',
-                   '-entity', 'gripper',
+                   '-entity', 'owl',
                    '-x', '-0.4',   
                     '-y', '0.0',
                     '-z', '1.07']
+        output='screen',
+
     )
+
+# Load controllers
+    load_controllers = ExecuteProcess(
+        cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
+             'joint_state_broadcaster'],
+        output='screen'
+    )
+
+    load_arm_controller = ExecuteProcess(
+        cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
+             'arm_controller'],
+        output='screen'
+    )
+
+# MoveIt 2 launch
+    moveit_config = (LaunchConfiguration('moveit_config', default=os.path.join(
+        pkg_moveit_config, 'launch', 'move_group.launch.py')))
+
+    moveit = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(moveit_config)
+    )
+
 
     return LaunchDescription([
         declare_use_sim_time,
@@ -60,4 +85,7 @@ def generate_launch_description():
         node_joint_state_publisher,
         spawn_entity,
         gazebo_launcher,
+        load_controllers,
+        load_arm_controller,
+        moveit
     ])
