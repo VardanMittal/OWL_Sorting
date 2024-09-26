@@ -1,0 +1,1 @@
+/home/aaditya/OWL_Sorting/ros2_ws/src/owl_moveit_config/launch/setup_assistant.launch.py

@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: owl_description
+    relative_path: urdf/robot.xacro
+  srdf:
+    relative_path: config/owl_description.srdf
+  package_settings:
+    author_name: Aaditya NImkar
+    author_email: aaditya.nimkar@gmail.com
+    generated_timestamp: 1727335523
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
