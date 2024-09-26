@@ -20,7 +20,7 @@ def generate_launch_description():
     # Get directories
     pkg_gazebo = get_package_share_directory('owl_gazebo')
     pkg_moveit_config = get_package_share_directory('owl_moveit_config')
-
+    print(pkg_moveit_config)
     # Process URDF file
     xacro_file = os.path.join(pkg_gazebo, 'urdf', 'sim_gazebo.xacro')
     if not os.path.exists(xacro_file):
