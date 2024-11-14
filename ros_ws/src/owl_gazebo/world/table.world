@@ -14,11 +14,8 @@
     <include>
       <uri>model://table</uri>
     </include>
-  </world>
-</sdf>
-
-   <!-- Red Cube -->
-        <model name="red_cube">
+    <!-- Red Cube -->
+     <model name="red_cube">
       <pose>0.5 0 1.07 0 0 0</pose>
       <link name="link">
         <visual name="visual">
