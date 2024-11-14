@@ -68,7 +68,6 @@ After setting the repository, you can run the Gazebo simulation
 **Terminal 1:**
 
 Eg. Start Gazebo simulation of OWL 6.5 + Robotiq 2F 85 Gripper
-
 ```
 roslaunch owl_bringup bringup.launch gripper:=robotiq2f85 world:=table  camera:=on sim:=on time:=5
 ```
