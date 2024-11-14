@@ -37,7 +37,12 @@
           <arg name="value" value="gripper:=$(arg gripper) sim:=$(arg sim)" />
           <arg name="node_name" value="timed_roslaunch" /> <!-- This is optional argument -->
       </include>
-      
+          <!-- Launch the interactive color detection node -->
+    <node name="interactive_color_detector" pkg="owl_bringup" type="interactive_color_detector.py" output="screen">
+        <!-- Add any parameters you want to configure -->
+        <remap from="/camera/rgb/image_raw" to="/your_camera_topic" />
+    </node>
+
 
     
 </launch>
