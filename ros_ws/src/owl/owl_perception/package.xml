@@ -10,9 +10,9 @@
   <buildtool_depend>catkin</buildtool_depend>
 
 
-  <build_depend>realsense_gazebo_plugin</build_depend>
+  <!-- <build_depend>realsense_gazebo_plugin</build_depend>
   <build_export_depend>realsense_gazebo_plugin</build_export_depend>
-  <exec_depend>realsense_gazebo_plugin</exec_depend>
+  <exec_depend>realsense_gazebo_plugin</exec_depend> -->
 
   <exec_depend>perception</exec_depend>
 

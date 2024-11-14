@@ -3,8 +3,6 @@ project(owl_perception)
 
 
 find_package(catkin REQUIRED COMPONENTS
-  
-  realsense_gazebo_plugin
 )
 
 
