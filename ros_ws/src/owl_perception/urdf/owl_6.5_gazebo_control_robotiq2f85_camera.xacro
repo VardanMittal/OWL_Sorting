@@ -4,8 +4,6 @@
 
     <xacro:include filename="$(find owl_gazebo)/urdf/owl_6.5_gazebo_control_robotiq2f85.xacro"/>    
     <xacro:include filename="$(find owl_perception)/urdf/camera/d435/d435.urdf.xacro"/>    
-    <!-- <xacro:include filename="$(find realsense2_description)/urdf/_d435.urdf.xacro" /> -->
-
 
 
     <!-- D 435 Sensor -->

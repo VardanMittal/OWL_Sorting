@@ -1,7 +1,7 @@
 <launch>
     <!-- Declare arguments with default values -->
     <arg name="gripper" default="robotiq2f85" />  <!-- Option: vacuum, pneumatic,robotiq2f85 -->
-    <arg name="world" default="table" />  <!-- Option: empty, stand,table -->
+    <arg name="world" default="empty" />  <!-- Option: empty, stand,table -->
     <arg name="camera" default="on" />  <!-- Option: empty, stand,table -->
     <arg name="sim" default="on" />  <!-- Option: simulation ON or OFF -->
     <arg name="time" default="5" />  <!-- Option: Time to launch MoveIt -->
@@ -37,5 +37,7 @@
           <arg name="value" value="gripper:=$(arg gripper) sim:=$(arg sim)" />
           <arg name="node_name" value="timed_roslaunch" /> <!-- This is optional argument -->
       </include>
-     
+      
+
+    
 </launch>
