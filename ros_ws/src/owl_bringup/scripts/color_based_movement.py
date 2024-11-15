@@ -60,7 +60,7 @@ class TestOwlSimClient:
                 # Get the corresponding joint angles for the entered color
                 joint_goals = color_joint_mappings[color_input]
                 print(f"Received color: {color_input}")
-                print(f"Corresponding joint angles: {joint_goals}")
+                # print(f"Corresponding joint angles: {joint_goals}")
 
                 # Move the robot to the specified joint angles
                 
@@ -86,7 +86,7 @@ class TestOwlSimClient:
         Moves the robot to the specified joint angles.
         """
         status = self.client.move_to_joint(joint_goals)
-        print(f"Moving to joint positions: {joint_goals} - Status: {status}")
+        # print(f"Moving to joint positions: {joint_goals} - Status: {status}")
         time.sleep(0.2)
 
 if __name__ == "__main__":
